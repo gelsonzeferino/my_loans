@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="139dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="33dp"
+            android:text="@string/novo_ncadastro"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="173dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtName"
+        style="@style/formSignUp"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/formSignUp"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtCPF"
+        style="@style/formSignUp"
+        android:inputType="number"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/cpf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtRG"
+        style="@style/formSignUp"
+        android:inputType="number"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/rg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        style="@style/addressStyle"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCPF" />
+    <EditText
+        android:id="@+id/edtRenda"
+        style="@style/formSignUp"
+        android:inputType="numberDecimal"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/renda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCity" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        style="@style/formSignUp"
+        android:inputType="textPassword"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtState" />
+
+    <EditText
+        android:id="@+id/edtCity"
+        style="@style/formSignUp"
+
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAddress" />
+
+    <EditText
+        android:id="@+id/edtState"
+        style="@style/formSignUp"
+
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAddress" />
+
+
+
+    <Button
+        android:id="@+id/btnCadastro1"
+        style="@style/btnConcluir"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/cadastrar"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/btnCancelar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:hint="@string/cancelar"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRenda" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

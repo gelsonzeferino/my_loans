@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TQI Loans</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastro">Cadastrar</string>
+    <string name="novo_ncadastro">Novo \nCadastro</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="rg">RG</string>
+    <string name="renda">Renda</string>
+    <string name="address">Endereço</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="Solicitar">Solicitar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="detalhes">Detalhes</string>
+    <string name="email">Email</string>
+    <string name="greet">Olá,  </string>
+    <string name="user">user</string>
+    <string name="city">Cidade</string>
+    <string name="state">Estado</string>
+    <string name="newSolicitation">Nova \nSolicitação</string>
+    <string name="qtdParcelas">Quantidade \n Parcelas</string>
+    <string name="primeiraParcela">Data da \n Primeira Parcela</string>
+    <string name="meus_n_contratos">Meus \n Contratos</string>
+    <string name="minhas_solicita_es">Minhas \n Solicitações</string>
+</resources>

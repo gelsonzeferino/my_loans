@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="195dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logologin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/formlogin"
+        style="@style/FormEmailPassword"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/edittext"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:gravity="center"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/formlogin"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="@+id/formlogin"
+        app:layout_constraintTop_toTopOf="@+id/formlogin" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        style="@style/edittext"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:drawableStart="@drawable/ic_pass"
+        android:gravity="center"
+        android:hint="@string/senha"
+        app:layout_constraintEnd_toEndOf="@+id/formlogin"
+        app:layout_constraintHorizontal_bias="0.555"
+
+        app:layout_constraintStart_toStartOf="@+id/formlogin"
+        app:layout_constraintTop_toTopOf="@+id/edtEmail" />
+
+
+    <Button
+        android:id="@+id/bt_entrar"
+        style="@style/button"
+        android:hint="@string/entrar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlogin" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlogin" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/cadastro"
+        android:textSize="18sp"
+        android:textColor="@color/blue_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_entrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "123692933170",
+    "project_id": "tqiloans",
+    "storage_bucket": "tqiloans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123692933170:android:c79bbf9285a22fd00a1c2b",
+        "android_client_info": {
+          "package_name": "com.gelson.tqiloans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123692933170-2domu60ull790ugr1uh9j3skaqrechnn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gelson.tqiloans",
+            "certificate_hash": "6facfa2037923fae163185cc82a243dc9c06081f"
+          }
+        },
+        {
+          "client_id": "123692933170-6shrifofno8lddqpqb4r63i7dd17e6dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA81553QPG1GJEpyvxEzDOBxPZciPrbMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123692933170-6shrifofno8lddqpqb4r63i7dd17e6dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
