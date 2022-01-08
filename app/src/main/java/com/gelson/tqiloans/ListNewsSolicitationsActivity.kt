@@ -2,7 +2,9 @@ package com.gelson.tqiloans
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app
+
+.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import com.gelson.tqiloans.databinding.ActivityListNewsSolicitationsBinding

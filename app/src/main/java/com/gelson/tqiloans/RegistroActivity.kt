@@ -57,6 +57,11 @@ class RegistroActivity : AppCompatActivity() {
             validateData()
         }
 
+        binding.btnCancelar.setOnClickListener {
+            startActivity(Intent(this, Login :: class.java))
+            finish()
+        }
+
         setContentView(binding.root)
         window.statusBarColor = Color.BLACK;
         supportActionBar?.hide();

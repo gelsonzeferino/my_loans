@@ -39,7 +39,7 @@ class NewSolicitationActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         db = FirebaseDatabase.getInstance()
-        dbReference = db!!.reference.child("contratos")
+        dbReference = db!!.reference.child("solicitacoesEmAnalise")
 
         binding.btnCancelar.setOnClickListener {
             startActivity(Intent(this, HomeActivity :: class.java))
@@ -101,7 +101,7 @@ class NewSolicitationActivity : AppCompatActivity() {
                     currentUserDb?.child("valor")?.setValue(valor)
                     currentUserDb?.child("qtdParcelas")?.setValue(qtdParcelas)
                     currentUserDb?.child("primeiraParcela")?.setValue(primeiraParcela) //todo: Formatar para data.
-                    currentUserDb?.child("status")?.setValue("Liquidado")
+                    currentUserDb?.child("status")?.setValue("Em analise")
                     Toast.makeText(this, "Nova Solicitação enviada", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this, HomeActivity::class.java))
                     finish()
