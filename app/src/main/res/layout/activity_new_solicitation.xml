@@ -35,7 +35,7 @@
                     android:id="@+id/img"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/foto"/>
+                    android:src="@drawable/logoapp"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -120,7 +120,7 @@
     <EditText
         android:id="@+id/edtDataParcela"
         style="@style/addressStyle"
-        android:inputType="date"
+        android:inputType="none"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -129,7 +129,7 @@
         android:hint="@string/primeiraParcela"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtQtdParcelas" />
+        app:layout_constraintTop_toBottomOf="@+id/edtQtdParcelas"/>
         
 
     <Button

@@ -9,9 +9,11 @@ import android.text.TextUtils
 
 import android.widget.Toast
 import com.gelson.tqiloans.databinding.ActivityNewSolicitationBinding
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.util.*
 import kotlin.random.Random
 
 class NewSolicitationActivity : AppCompatActivity() {
@@ -54,9 +56,18 @@ class NewSolicitationActivity : AppCompatActivity() {
         window.statusBarColor = Color.BLACK;
         supportActionBar?.hide();
 
-
-
+        binding.edtDataParcela.setOnClickListener{
+            val datePicker = MaterialDatePicker.Builder.datePicker().build()
+            datePicker.addOnPositiveButtonClickListener {
+                val timeZone = TimeZone.getDefault()
+                val offset = timeZone.getOffset(Date().time) * -1
+                binding.edtDataParcela.setText(Date(it + offset).format())
+            }
+            datePicker.show(supportFragmentManager, "DATE_PICKER_TAG")
+        }
     }
+
+
 
     private fun validateData() {
 

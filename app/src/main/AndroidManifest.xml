@@ -20,9 +20,7 @@
         <activity
             android:name=".ListContractsActivity"
             android:exported="false" />
-        <activity
-            android:name=".contractModelActivity"
-            android:exported="false" />
+
         <activity
             android:name=".NewSolicitationActivity"
             android:exported="false" />
