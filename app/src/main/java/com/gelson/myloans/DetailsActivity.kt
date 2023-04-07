@@ -1,12 +1,10 @@
-package com.gelson.tqiloans
+package com.gelson.myloans
 
-import android.content.Intent
+
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.gelson.tqiloans.databinding.ActivityDetailsBinding
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
+import androidx.appcompat.app.AppCompatActivity
+import com.gelson.myloans.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
@@ -20,8 +18,8 @@ class DetailsActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        window.statusBarColor = Color.BLACK;
-        supportActionBar?.hide();
+        window.statusBarColor = Color.BLACK
+        supportActionBar?.hide()
 
 
     }

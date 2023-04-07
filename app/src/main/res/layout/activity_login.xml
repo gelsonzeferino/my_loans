@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true">
 
@@ -19,8 +20,8 @@
         android:id="@+id/logo"
         android:layout_width="195dp"
         android:layout_height="177dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/logologin"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logoapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

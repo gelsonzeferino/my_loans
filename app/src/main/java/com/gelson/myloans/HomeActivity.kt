@@ -1,21 +1,21 @@
-package com.gelson.tqiloans
+package com.gelson.myloans
 
-import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
-import com.gelson.tqiloans.databinding.ActivityHomeBinding
+import com.gelson.myloans.databinding.ActivityHomeBinding
+
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.squareup.picasso.Picasso
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private lateinit var firebaseAuth: FirebaseAuth
-    var dbReference : DatabaseReference? = null
-    var db: FirebaseDatabase? = null
+    private var dbReference : DatabaseReference? = null
+    private var db: FirebaseDatabase? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding  = ActivityHomeBinding.inflate(layoutInflater)
@@ -53,8 +53,8 @@ class HomeActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        window.statusBarColor = Color.BLACK;
-        supportActionBar?.hide();
+        window.statusBarColor = Color.BLACK
+        supportActionBar?.hide()
     }
     private fun checkUser() {
         val firebaseUser = firebaseAuth.currentUser
@@ -66,6 +66,11 @@ class HomeActivity : AppCompatActivity() {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val userGreet = snapshot.child("name").value.toString()
                     binding.userView.text = userGreet
+
+                    val userImg = snapshot.child("imgUrl").value.toString()
+                    println(userImg)
+
+                    Picasso.get().load(userImg).into(binding.imageUser)
 
 
                 }

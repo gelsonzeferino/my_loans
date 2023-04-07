@@ -1,24 +1,25 @@
-package com.gelson.tqiloans
+package com.gelson.myloans
 
+import java.util.*
 import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PatternMatcher
 import android.text.TextUtils
 import android.util.Patterns
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.gelson.tqiloans.databinding.ActivityLoginBinding
+import com.gelson.myloans.databinding.ActivityLoginBinding
+
+
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
+
 
 class Login : AppCompatActivity() {
 
     //ViewBinding
-    private lateinit var binding:ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
     //ActionBar
     private lateinit var actionBar: ActionBar
     //ProgressDialog
@@ -56,8 +57,8 @@ class Login : AppCompatActivity() {
         binding.btEntrar.setOnClickListener{
             validateData()
         }
-        window.statusBarColor = Color.BLACK;
-        supportActionBar?.hide();
+        window.statusBarColor = Color.BLACK
+        supportActionBar?.hide()
     }
 
     private fun validateData() {

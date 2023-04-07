@@ -18,21 +18,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="37dp"
             android:layout_marginStart="20dp"
+            android:layout_marginBottom="21dp"
             android:id="@+id/linearApp"
             >
 
-            <androidx.cardview.widget.CardView
 
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageUser"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:cardCornerRadius="250dp">
-
-
-
-            </androidx.cardview.widget.CardView>
+                android:src="@color/black"/>
 
             <TextView
                 android:id="@+id/greetView"
@@ -87,13 +84,14 @@
 
     <ImageView
         android:id="@+id/profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="56dp"
         android:src="@drawable/profile"
 
         app:layout_constraintEnd_toStartOf="@+id/listContract"
-        app:layout_constraintHorizontal_bias="0.451"
+
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newLoan" />
 

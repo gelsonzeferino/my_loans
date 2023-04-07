@@ -28,30 +28,45 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="173dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="148dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageUser"
+        android:layout_width="103dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/logoapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+
+
 
     <EditText
         android:id="@+id/edtName"
         style="@style/formSignUp"
         android:layout_width="383dp"
         android:layout_height="40dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/blue"
         android:gravity="center"
         android:hint="@string/nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageUser" />
 
+    <EditText
+        android:id="@+id/edtLastName"
+        style="@style/formSignUp"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:hint="@string/lastName"
+        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
 
     <EditText
         android:id="@+id/edtEmail"
@@ -65,7 +80,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLastName" />
 
     <EditText
         android:id="@+id/edtCPF"
@@ -168,7 +183,7 @@
     <Button
         android:id="@+id/btnCadastro1"
         style="@style/btnConcluir"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/cadastrar"
         android:textColorHint="@color/white"
@@ -181,7 +196,7 @@
         android:id="@+id/btnCancelar"
         style="@style/btnCancelar"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/cancelar"
         android:textColorHint="@color/white"
         android:textSize="18sp"

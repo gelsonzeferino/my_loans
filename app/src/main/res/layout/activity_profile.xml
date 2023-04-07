@@ -54,19 +54,18 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.cardview.widget.CardView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageUser"
         android:layout_width="95dp"
         android:layout_height="95dp"
-        android:layout_marginTop="148dp"
-        app:cardCornerRadius="250dp">
-
-
-    </androidx.cardview.widget.CardView>
-
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="158dp"
+        android:src="@drawable/logoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
 
     <TextView
         android:id="@+id/edtName"
@@ -194,15 +193,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtRenda" />
-
-    <ImageView
-        android:id="@+id/chancePfileImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/vector"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="148dp"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView5"

@@ -1,31 +1,29 @@
-package com.gelson.tqiloans
+package com.gelson.myloans
 
 import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-
 import android.widget.Toast
-import com.gelson.tqiloans.databinding.ActivityNewSolicitationBinding
+import androidx.appcompat.app.AppCompatActivity
+import com.gelson.myloans.databinding.ActivityNewSolicitationBinding
+
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import java.util.*
-import kotlin.random.Random
 
 class NewSolicitationActivity : AppCompatActivity() {
-    var database: FirebaseDatabase = FirebaseDatabase.getInstance()
 
     private lateinit var binding: ActivityNewSolicitationBinding
     private lateinit var progressDialog: ProgressDialog
     private lateinit var firebaseAuth: FirebaseAuth
-    var dbReference : DatabaseReference? = null
-    var db: FirebaseDatabase? = null
+    private var dbReference : DatabaseReference? = null
+    private var db: FirebaseDatabase? = null
 
-    var valor = ""
+    private var valor = ""
     private var qtdParcelas = ""
     private var primeiraParcela = ""
     var email = ""
@@ -53,8 +51,8 @@ class NewSolicitationActivity : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        window.statusBarColor = Color.BLACK;
-        supportActionBar?.hide();
+        window.statusBarColor = Color.BLACK
+        supportActionBar?.hide()
 
         binding.edtDataParcela.setOnClickListener{
             val datePicker = MaterialDatePicker.Builder.datePicker().build()
@@ -100,9 +98,9 @@ class NewSolicitationActivity : AppCompatActivity() {
 
                     val currentUser = firebaseAuth.currentUser
                     val email = currentUser?.email
-                    val currentUserDb = dbReference?.child((currentUser?.uid!!+ Random.nextInt(1, 100)))
+                    val currentUserDb = dbReference?.child((currentUser?.uid!!+ Random().nextInt(100)))
                     val uid = currentUser?.uid
-                    var cid = Random.nextInt(100)
+                    val cid = Random().nextInt(100)
 
 
 
